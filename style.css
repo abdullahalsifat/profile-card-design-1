@@ -1,0 +1,101 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'Poppins';
+ width: 100%;
+ height: 100vh;
+ background: url(form-html-css-04.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 15px;
+}
+
+.container{
+ width: 400px;
+ backdrop-filter: blur(20px);
+ border: 2px solid #fff;
+ border-radius: 10px;
+}
+
+.container .cover{
+ width: 100%;
+ display: block;
+ border-radius: 10px 10px 0 0;
+ border: 2px solid darkgray;
+}
+
+.container .profile{
+ width: 160px;
+ height: 160px;
+ border: 2px solid #fff;
+ border-radius: 50%;
+ display: block;
+ margin: auto;
+ margin-top: -80px;
+ position: relative;
+ animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange{
+ 0%{
+  border: 2px solid #fff;
+ }
+ 50%{
+  border: 2px solid rgb(192, 73, 73);
+ }
+}
+
+.container .infoText{
+ text-align: center;
+ color: #fff;
+ margin: 30px;
+}
+
+.infoText p{
+ font-size: 14px;
+}
+
+.container .FFL{
+ width: 100%;
+ color: #fff;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin: 30px 0;
+ text-align: center;
+}
+
+.container .btn{
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin: 30px 0;
+}
+
+.btn button{
+ outline: none;
+ border: none;
+ padding: 8px 30px;
+ border-radius: 20px;
+ background-color: transparent;
+ border: 2px solid #fff;
+ color: #fff;
+ font-size: 16px;
+ cursor: pointer;
+ transition: 0.5s;
+}
+
+.btn button:hover{
+ transform: scale(1.1);
+}
+
+
